@@ -64,7 +64,7 @@ void checkTile() {
         player.x == ROOM_WIDTH / 2 && player.y == ROOM_HEIGHT / 2 - 2) {
         player.hasKey = true;
         rooms[player.currentRoom].tile = EMPTY;
-        goToXY(player.x, player.y); std::cout << "@";
+        goToXY(player.x, player.y); cout << "@";
     }
 
     if (rooms[player.currentRoom].tile == EXIT &&
